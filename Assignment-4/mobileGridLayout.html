@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Layout using CSS Grid</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+}
+
+.container{
+display:grid;
+grid-template-areas:
+"navbar"
+"header"
+"main"
+"content1"
+"content2"
+"content3"
+"footer";
+
+grid-template-rows:60px 80px 120px 120px 120px 120px 60px;
+width:360px;           /* mobile width */
+margin:auto;
+border:2px solid black;
+}
+
+/* Sections */
+
+.navbar{
+grid-area:navbar;
+background:#333;
+color:white;
+text-align:center;
+line-height:60px;
+}
+
+.header{
+grid-area:header;
+background:orange;
+text-align:center;
+line-height:80px;
+}
+
+.main{
+grid-area:main;
+background:lightblue;
+text-align:center;
+line-height:120px;
+}
+
+.content1{
+grid-area:content1;
+background:lightgreen;
+text-align:center;
+line-height:120px;
+}
+
+.content2{
+grid-area:content2;
+background:lightpink;
+text-align:center;
+line-height:120px;
+}
+
+.content3{
+grid-area:content3;
+background:lightyellow;
+text-align:center;
+line-height:120px;
+}
+
+.footer{
+grid-area:footer;
+background:#444;
+color:white;
+text-align:center;
+line-height:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="navbar">Navbar</div>
+
+<div class="header">Header</div>
+
+<div class="main">Main</div>
+
+<div class="content1">Content 1</div>
+
+<div class="content2">Content 2</div>
+
+<div class="content3">Content 3</div>
+
+<div class="footer">Footer</div>
+
+</div>
+
+</body>
+</html>

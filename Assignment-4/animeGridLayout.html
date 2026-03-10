@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anime Grid</title>
+
+<style>
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#eee;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,150px);
+gap:10px;
+}
+
+.grid img{
+width:150px;
+height:150px;
+object-fit:cover;
+}
+
+/* Hover effect only for 5th image */
+
+.grid img:nth-child(5){
+transition:0.4s;
+}
+
+.grid img:nth-child(5):hover{
+transform:scale(1.2);
+border:3px solid red;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<img src="https://picsum.photos/200?random=1">
+<img src="https://picsum.photos/200?random=2">
+<img src="https://picsum.photos/200?random=3">
+<img src="https://picsum.photos/200?random=4">
+<img src="https://picsum.photos/200?random=5">
+<img src="https://picsum.photos/200?random=6">
+<img src="https://picsum.photos/200?random=7">
+<img src="https://picsum.photos/200?random=8">
+<img src="https://picsum.photos/200?random=9">
+
+</div>
+
+</body>
+</html>

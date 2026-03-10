@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Two Column Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;          /* Flexbox layout */
+        }
+
+        .sidebar {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .content {
+            width: 70%;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        /* Media Query for small screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;   /* Stack vertically */
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Left Sidebar</h2>
+            <p>This is the sidebar section.</p>
+        </div>
+
+        <div class="content">
+            <h2>Right Content Area</h2>
+            <p>
+                This is the main content area. On smaller screens,
+                the layout will stack vertically.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Header Bar</title>
+
+    <style>
+        .header {
+            display: flex;                  /* Enables flexbox */
+            justify-content: space-between; /* Space between logo and menu */
+            align-items: center;            /* Vertical alignment */
+            background-color: red;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;                      /* Space between menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <h2>MyLogo</h2>
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+</body>
+</html>
